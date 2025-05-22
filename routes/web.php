@@ -3,10 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuestionController;
 
-Route::get('/', function () {
-    return view('questions.index');
-});
-
+Route::get('/', [QuestionController::class, 'index'])->name('questions.index');
 Route::resource('questions', QuestionController::class);
 
 Route::get('/questions', [QuestionController::class, 'index'])->name('questions.index');

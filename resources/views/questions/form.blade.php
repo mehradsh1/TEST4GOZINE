@@ -1,3 +1,5 @@
+<textarea name="explanation" class="form-control rich-text">{{ old('explanation') }}</textarea>
+
 <div class="mb-3">
     <label>عنوان سوال</label>
     <input type="text" name="title" class="form-control" value="{{ old('title', $question->title ?? '') }}">

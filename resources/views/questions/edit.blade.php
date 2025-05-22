@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <textarea name="explanation" class="form-control rich-text">{{ old('explanation') }}</textarea>
+
     <div class="container">
         <h2>ویرایش سوال</h2>
 
